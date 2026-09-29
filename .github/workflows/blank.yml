@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Primeiro Pipeline
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  
+  teste: 
+  runs-on: ubunto-latest
+    # The type of runner that the job will run on
+  
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Baixar código
+      - uses: actions/checkout@v4
+
+      
+      - name: Executar teste
+        run: echo Hello, world!
